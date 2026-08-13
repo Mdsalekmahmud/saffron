@@ -2,7 +2,7 @@
     :root {
         --brand-orange: #d36419;
         --brand-ink: #1e1614;
-        --brand-cream: #fcf9f4;
+        --brand-cream: #f6d89b;
         --brand-gold: #f5a623;
         --brand-border: #e5e7eb;
     }
@@ -22,7 +22,6 @@
         font-family: 'Fraunces', serif;
     }
 
-    /* কাস্টম কালার ক্লাস */
     .bg-cream {
         background-color: var(--brand-cream) !important;
     }
@@ -52,7 +51,6 @@
         border-color: #b8531e !important;
     }
 
-    /* কাস্টম স্পেসিং ও হোভার ইফেক্ট */
     .container-page {
         max-width: 1280px;
         margin: 0 auto;
@@ -61,7 +59,7 @@
 
     @media (min-width: 992px) {
         .container-page {
-            padding: 0 4rem;
+            padding: 0 0rem;
         }
     }
 
@@ -101,7 +99,6 @@
         transform: scale(1.05);
     }
 
-    /* অনুসন্ধান ইনপুটের জন্য ডান/বাম প্যাডিং */
     .search-wrapper {
         position: relative;
         flex-grow: 1;
@@ -119,7 +116,6 @@
         padding-left: 3.5rem !important;
     }
 
-    /* ক্যাটাগরি স্ক্রোল বার লুকানো */
     .no-scrollbar::-webkit-scrollbar {
         display: none;
     }
@@ -129,10 +125,9 @@
         scrollbar-width: none;
     }
 
-    /* স্টিকি কাস্টম পজিশন */
     .sticky-category {
         top: 72px;
-        background-color: rgba(255, 255, 255, 0.9);
+        background-color: #faefcd7a;
         backdrop-filter: blur(12px);
         z-index: 30;
     }
@@ -141,14 +136,131 @@
         top: 150px;
     }
 
-    /* ইনপুট রেঞ্জ (Price Range) */
     input[type=range] {
-        accent-color: var(--brand-orange);
+        accent-color: orange;
     }
 
     .form-check-input:checked {
         background-color: var(--brand-orange);
         border-color: var(--brand-orange);
+    }
+
+
+
+    .menu-Search {
+        background-color: transparent !important;
+        border: 1px solid #3e3a33 !important;
+        border-radius: 50px !important;
+        padding: 12px 16px !important;
+        flex-grow: 1;
+        transition: border-color 0.3s ease;
+        box-shadow: none !important;
+    }
+
+    .menu-Search:focus {
+        outline: none !important;
+        border-color: #d36419 !important;
+        box-shadow: none !important;
+        background-color: transparent !important;
+        color: #d36419 !important;
+    }
+
+    .menu-Search::placeholder {
+        color: rgba(255, 255, 255, 0.4);
+    }
+
+    /* .category-button.active {
+    color: #fff9f0 !important;
+    background-color: #d36419 !important;
+    font-weight: 600;
+    border-color: #d36419 !important;
+    transition: all 0.2s ease;
+} */
+
+
+    .categoryNavbar {
+        position: sticky;
+        top: 71px;
+        z-index: 1020;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        transition: box-shadow 0.3s ease;
+    }
+
+
+    input[type="range"] {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 100%;
+        height: 4px;
+        background: transparent;
+    }
+
+    /* ---- Chrome, Safari, Edge (WebKit) ---- */
+
+    input[type="range"] {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background: #d36419;
+        outline: none;
+        transition: background 0.1s ease;
+    }
+
+    /* ---- Chrome, Safari, Edge (WebKit) ---- */
+    input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #d36419;
+        cursor: pointer;
+        border: 2px solid #ffffff;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        margin-top: -8px;
+        transition: 0.1s;
+    }
+
+    input[type="range"]::-webkit-slider-thumb:hover {
+        transform: scale(1.1);
+        background: #b8531e;
+    }
+
+    input[type="range"]::-webkit-slider-runnable-track {
+        height: 4px;
+        border-radius: 2px;
+        background: transparent;
+        border: none;
+    }
+
+    /* ---- Firefox ---- */
+    input[type="range"]::-moz-range-thumb {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #d36419;
+        cursor: pointer;
+        border: 2px solid #d36419;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Firefox */
+    input[type="range"]::-moz-range-track {
+        height: 4px;
+        border-radius: 2px;
+        background: transparent;
+        border: none;
+    }
+
+    input[type="range"]:active::-webkit-slider-thumb {
+        background: #b8531e;
+        transform: scale(1.15);
+    }
+
+    input[type="range"]:active::-moz-range-thumb {
+        background: #b8531e;
     }
 </style>
 <x-app>
@@ -162,7 +274,7 @@
                     <span class="mx-2">/</span>
                     <span class="text-dark fw-semibold">Menu</span>
                 </nav>
-                <h1 class="mt-3 font-display fs-2 fw-semibold">The menu</h1>
+                <h1 class="mt-3 font-display fw-semibold" style="font-size: 60px;">The menu</h1>
                 <p class="mt-2 text-muted" style="max-width: 500px;">Fifty-two dishes, rewritten each season. Everything
                     below is available for delivery, pickup and dine-in unless marked otherwise.</p>
 
@@ -172,7 +284,7 @@
                         <i class="bi bi-search fs-6"></i>
                         <label for="menu-search" class="visually-hidden">Search dishes</label>
                         <input id="menu-search" type="text"
-                            class="form-control rounded-pill border shadow-sm bg-white"
+                            class=" menu-search form-control rounded-pill border shadow-sm bg-white"
                             placeholder="Search for ribeye, pizza, vegan…" style="min-height: 50px;">
                     </div>
                     <label for="sort" class="visually-hidden">Sort dishes</label>
@@ -193,32 +305,35 @@
         </section>
 
         <!-- Sticky Categories Filter (Navbar height 72px + 1px border = 73px) -->
-        <div class="sticky-category border-bottom border-border py-3 z-3 shadow-sm">
+        <div class="categoryNavbar sticky-category border-bottom border-border py-3 z-3 shadow-sm" id="categoryNavbar">
             <div class="container-page no-scrollbar d-flex gap-2 overflow-x-auto">
                 <button type="button"
-                    class="btn btn-outline-secondary rounded-pill px-4 py-2 flex-shrink-0 border">All</button>
+                    class="btn btn-outline-dark-brand rounded-pill px-4 py-2 flex-shrink-0 border category-button active">All</button>
                 <button type="button"
-                    class="btn btn-outline-secondary rounded-pill px-4 py-2 flex-shrink-0 border">Signatures</button>
-                <button type="button" class="btn btn-primary rounded-pill px-4 py-2 flex-shrink-0">From the
+                    class="btn btn-outline-dark-brand rounded-pill px-4 py-2 flex-shrink-0 border category-button active">Signatures</button>
+                <button type="button"
+                    class="btn btn-outline-dark-brand rounded-pill px-4 py-2 flex-shrink-0 border category-button active">From
+                    the
                     Fire</button>
                 <button type="button"
-                    class="btn btn-outline-secondary rounded-pill px-4 py-2 flex-shrink-0 border">Wood-Fired
+                    class="btn btn-outline-dark-brand rounded-pill px-4 py-2 flex-shrink-0 border category-button active">Wood-Fired
                     Pizza</button>
                 <button type="button"
-                    class="btn btn-outline-secondary rounded-pill px-4 py-2 flex-shrink-0 border">Handmade
+                    class="btn btn-outline-dark-brand rounded-pill px-4 py-2 flex-shrink-0 border category-button active">Handmade
                     Pasta</button>
                 <button type="button"
-                    class="btn btn-outline-secondary rounded-pill px-4 py-2 flex-shrink-0 border">Ocean</button>
+                    class="btn btn-outline-dark-brand rounded-pill px-4 py-2 flex-shrink-0 border category-button active">Ocean</button>
                 <button type="button"
-                    class="btn btn-outline-secondary rounded-pill px-4 py-2 flex-shrink-0 border">Garden</button>
+                    class="btn btn-outline-dark-brand rounded-pill px-4 py-2 flex-shrink-0 border category-button active">Garden</button>
                 <button type="button"
-                    class="btn btn-outline-secondary rounded-pill px-4 py-2 flex-shrink-0 border">Burgers</button>
+                    class="btn btn-outline-dark-brand rounded-pill px-4 py-2 flex-shrink-0 border category-button active">Burgers</button>
                 <button type="button"
-                    class="btn btn-outline-secondary rounded-pill px-4 py-2 flex-shrink-0 border">Small Plates</button>
+                    class="btn btn-outline-dark-brand rounded-pill px-4 py-2 flex-shrink-0 border category-button active">Small
+                    Plates</button>
                 <button type="button"
-                    class="btn btn-outline-secondary rounded-pill px-4 py-2 flex-shrink-0 border">Sweet</button>
+                    class="btn btn-outline-dark-brand rounded-pill px-4 py-2 flex-shrink-0 border category-button active">Sweet</button>
                 <button type="button"
-                    class="btn btn-outline-secondary rounded-pill px-4 py-2 flex-shrink-0 border">Drinks</button>
+                    class="btn btn-outline-dark-brand rounded-pill px-4 py-2 flex-shrink-0 border category-button active">Drinks</button>
             </div>
         </div>
 
@@ -226,13 +341,13 @@
         <section class="container-page py-5">
             <div class="row g-5">
 
-                <!-- Sidebar (ডেস্কটপে দেখাবে) -->
+                <!-- Sidebar -->
                 <aside class="col-lg-3 d-none d-lg-block">
-                    <div class="sticky-sidebar rounded-4 border border-border bg-light p-4 shadow-sm">
+                    <div class="sticky-sidebar rounded-5 border border-border bg-light p-4 shadow-sm">
                         <div class="mb-4">
-                            <h6 class="small text-uppercase fw-bold text-muted tracking-wide mb-3">Max price</h6>
-                            <input type="range" class="form-range w-100" min="8" max="60" step="1"
-                                value="60" style="height: 4px;">
+                            <h6 class="small text-uppercase fw-bold text-muted tracking-wide mb-3 ">Max price</h6>
+                            <input type="range" class="form-range rounded-2w-100" min="8" max="60"
+                                step="1" value="60" style="height: 7px;">
                             <p class="mt-2 small fw-semibold">Up to €60.00</p>
                         </div>
                         <div class="mb-4">
@@ -260,13 +375,13 @@
                             <h6 class="small text-uppercase fw-bold text-muted tracking-wide mb-3">Spice level</h6>
                             <div class="d-flex flex-wrap gap-2">
                                 <button type="button"
-                                    class="btn btn-outline-secondary rounded-pill px-3 py-1 small">Mild</button>
+                                    class="btn btn-outline-dark-brand rounded-pill px-4 py-2 flex-shrink-0 border category-button active">Mild</button>
                                 <button type="button"
-                                    class="btn btn-outline-secondary rounded-pill px-3 py-1 small">Warm</button>
+                                    class="btn btn-outline-dark-brand rounded-pill px-4 py-2 flex-shrink-0 border category-button active">Warm</button>
                                 <button type="button"
-                                    class="btn btn-outline-secondary rounded-pill px-3 py-1 small">Hot</button>
+                                    class="btn btn-outline-dark-brand rounded-pill px-4 py-2 flex-shrink-0 border category-button active">Hot</button>
                                 <button type="button"
-                                    class="btn btn-outline-secondary rounded-pill px-3 py-1 small">Fierce</button>
+                                    class="btn btn-outline-dark-brand rounded-pill px-4 py-2 flex-shrink-0 border category-button active">Fierce</button>
                             </div>
                         </div>
                         <div class="form-check mb-4">
@@ -286,33 +401,44 @@
                     <div class="row gap-1 row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
 
                         <!-- Dish Card 1 -->
-                        <div class="col-md-4"><x-cards.service-card image="{{ asset('assets/images/service.jpg') }}"
+                        <div class="col-md-4" style="width: 32%;">
+                            <x-cards.service-card image="{{ asset('assets/images/service.jpg') }}"
                                 title="Web Development" description="Professional Laravel web development service."
                                 url="#" />
                         </div>
-                        <div class="col-md-4"><x-cards.service-card image="{{ asset('assets/images/service.jpg') }}"
-                                title="Web Development" description="Professional Laravel web development service."
-                                url="#" />
+                        <div class="col-md-4" style="width: 32%;">
+                            <x-cards.service-card
+                                image="{{ asset('assets/images/service.jpg') }}" title="Web Development"
+                                description="Professional Laravel web development service." url="#" />
                         </div>
-                        <div class="col-md-4"><x-cards.service-card image="{{ asset('assets/images/service.jpg') }}"
-                                title="Web Development" description="Professional Laravel web development service."
-                                url="#" />
+                        <div class="col-md-4" style="width: 32%;">
+                            <x-cards.service-card
+                                image="{{ asset('assets/images/service.jpg') }}" title="Web Development"
+                                description="Professional Laravel web development service." url="#" />
                         </div>
-                        <div class="col-md-4"><x-cards.service-card image="{{ asset('assets/images/service.jpg') }}"
-                                title="Web Development" description="Professional Laravel web development service."
-                                url="#" />
+                        <div class="col-md-4" style="width: 32%;">
+                            <x-cards.service-card
+                                image="{{ asset('assets/images/service.jpg') }}" title="Web Development"
+                                description="Professional Laravel web development service." url="#" />
                         </div>
-                        <!-- Dish Card 2 -->
-                        <x-cards.service-card image="{{ asset('assets/images/service.jpg') }}" title="Web Development"
-                            description="Professional Laravel web development service." url="#" />
-
-                        <!-- Dish Card 3 (সব রকম ব্যাজ ও আইকন সহ) -->
-                        <x-cards.service-card image="{{ asset('assets/images/service.jpg') }}" title="Web Development"
-                            description="Professional Laravel web development service." url="#" />
-
                     </div>
                 </div>
             </div>
         </section>
     </main>
 </x-app>
+
+
+<script>
+    const slider = document.querySelector('input[type="range"]');
+
+    slider.addEventListener('input', function() {
+        const min = this.min || 0;
+        const max = this.max || 100;
+        const val = this.value;
+        const percentage = ((val - min) / (max - min)) * 100;
+        // গ্রেডিয়েন্ট আপডেট করুন
+        this.style.background =
+            `linear-gradient(to right, #d36419 0%, #d36419 ${percentage}%, #e0dcd6 ${percentage}%, #e0dcd6 100%)`;
+    });
+</script>

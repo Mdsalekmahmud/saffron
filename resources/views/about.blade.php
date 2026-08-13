@@ -18,19 +18,17 @@
         .btn-primary:hover { background-color: #b8531e !important; border-color: #b8531e !important; }
         .btn-outline-light:hover { background-color: var(--brand-orange) !important; border-color: var(--brand-orange) !important; color: #fff !important; }
         
-        .container-page { max-width: 1280px; margin: 0 auto; padding: 0 1.5rem; }
-        @media (min-width: 992px) { .container-page { padding: 0 4rem; } }
+        .container-page { max-width: 1280px; margin: 0 auto; padding: ; }
+        @media (min-width: 992px) { .container-page { padding: 0 ; } }
         
         .eyebrow { font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--brand-orange); font-weight: 600; }
         .shadow-soft { box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03) !important; }
         
-        /* হোভার এবং জুম ইফেক্ট */
         .hover-lift { transition: transform 0.2s, box-shadow 0.2s; }
         .hover-lift:hover { transform: translateY(-4px); box-shadow: 0 10px 25px rgba(0,0,0,0.05) !important; }
         .zoom-media img { transition: transform 0.5s ease; }
         .zoom-media:hover img { transform: scale(1.05); }
 
-        /* সিএসএস সহায়ক ক্লাস */
         .text-ink-foreground\/70 { color: rgba(255, 255, 255, 0.7); }
         .aspect-4x5 { aspect-ratio: 4/5; }
     </style>
@@ -45,7 +43,7 @@
                     class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" style="opacity: 0.45;">
             <div class="container-page position-relative py-5 py-md-7">
                 <p class="eyebrow">Since 2014</p>
-                <h1 class="mt-3 font-display fs-2 fw-semibold lh-sm" style="max-width: 800px;">We built a kitchen around a fire and let it decide the menu.</h1>
+                <h1 class="mt-3 font-display  fw-semibold lh-sm" style="max-width: 850px; font-size:60px;">We built a kitchen around a fire and let it decide the menu.</h1>
             </div>
         </section>
 
@@ -65,10 +63,10 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="row row-cols-2 g-3">
-                        <div class="col"><div class="ratio ratio-1x1 rounded-4 overflow-hidden zoom-media border border-border"><img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400" class="w-100 h-100 object-fit-cover" alt="Dish 1"></div></div>
-                        <div class="col"><div class="ratio ratio-1x1 rounded-4 overflow-hidden zoom-media border border-border"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400" class="w-100 h-100 object-fit-cover" alt="Dish 2"></div></div>
-                        <div class="col"><div class="ratio ratio-1x1 rounded-4 overflow-hidden zoom-media border border-border"><img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=400" class="w-100 h-100 object-fit-cover" alt="Dish 3"></div></div>
-                        <div class="col"><div class="ratio ratio-1x1 rounded-4 overflow-hidden zoom-media border border-border"><img src="https://images.unsplash.com/photo-1624734452268-5c946dbeb65b?w=400" class="w-100 h-100 object-fit-cover" alt="Dish 4"></div></div>
+                        <div class="col"><div class="ratio ratio-1x1 rounded-5 overflow-hidden zoom-media border border-border"><img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400" class="w-100 h-100 object-fit-cover" alt="Dish 1"></div></div>
+                        <div class="col"><div class="ratio ratio-1x1 rounded-5 overflow-hidden zoom-media border border-border"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400" class="w-100 h-100 object-fit-cover" alt="Dish 2"></div></div>
+                        <div class="col"><div class="ratio ratio-1x1 rounded-5 overflow-hidden zoom-media border border-border"><img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=400" class="w-100 h-100 object-fit-cover" alt="Dish 3"></div></div>
+                        <div class="col"><div class="ratio ratio-1x1 rounded-5 overflow-hidden zoom-media border border-border"><img src="https://images.unsplash.com/photo-1624734452268-5c946dbeb65b?w=400" class="w-100 h-100 object-fit-cover" alt="Dish 4"></div></div>
                     </div>
                 </div>
             </div>
@@ -79,8 +77,8 @@
             <div class="container-page">
                 <div class="row align-items-center g-5">
                     <div class="col-lg-5">
-                        <div class="zoom-media overflow-hidden rounded-4 border border-border">
-                            <img src="https://images.unsplash.com/photo-1590944392279-57c818ad7dbf?w=600" class="aspect-4x5 w-100 object-fit-cover" alt="Inês Carvalho">
+                        <div class="zoom-media overflow-hidden rounded-5 border border-border">
+                            <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400" class="aspect-4x5 w-100 object-fit-cover" alt="Inês Carvalho">
                         </div>
                     </div>
                     <div class="col-lg-7">

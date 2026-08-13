@@ -12,6 +12,9 @@ Route::get('/about',[Pagecontroller::class,'about'])->name('about');
 Route::get('/contact',[Pagecontroller::class,'contact'])->name('contact');
 Route::get('/account',[Pagecontroller::class,'account'])->name('account');
 Route::get('/details',[Pagecontroller::class,'details'])->name('details');
+Route::get('/bag',[Pagecontroller::class,'bag'])->name('bag');
+
+
 
 
 

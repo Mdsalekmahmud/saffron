@@ -39,4 +39,7 @@ class Pagecontroller extends Controller
     public function details(){
         return view('details');
     }
+      public function bag(){
+        return view('bag');
+    }
 }

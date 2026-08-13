@@ -53,12 +53,12 @@
     .container-page {
         max-width: 1280px;
         margin: 0 auto;
-        padding: 0 1.5rem;
+        padding: ;
     }
 
     @media (min-width: 992px) {
         .container-page {
-            padding: 0 4rem;
+            /* padding: 0 4rem; */
         }
     }
 
@@ -74,7 +74,6 @@
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03) !important;
     }
 
-    /* হোভার এবং জুম ইফেক্ট */
     .hover-lift {
         transition: transform 0.2s, box-shadow 0.2s;
     }
@@ -103,7 +102,6 @@
         transform: scale(1.05);
     }
 
-    /* দাগযুক্ত বর্ডারের জন্য কাস্টম বাটন */
     .btn-dashed-primary {
         border: 1px dashed var(--brand-orange) !important;
         color: var(--brand-orange) !important;
@@ -122,14 +120,14 @@
         <div class="container-page py-4">
             <!-- Page Header -->
             <p class="eyebrow">Offers</p>
-            <h1 class="mt-3 font-display fs-2 fw-semibold">Worth ordering twice</h1>
+            <h1 class="mt-3 font-display fw-semibold" style="font-size:60px;" >Worth ordering twice</h1>
 
             <!-- Offer Cards Section -->
             <div class="row g-4 mt-3 row-cols-1 row-cols-md-3">
 
                 <!-- Offer Card 1 -->
                 <div class="col">
-                    <div class="card h-100 border border-border rounded-4 p-4 shadow-soft hover-lift bg-white">
+                    <div class="card h-100 border border-border rounded-5 p-4 shadow-soft hover-lift bg-white">
                         <p class="eyebrow">Ends 31 Dec</p>
                         <h3 class="font-display fs-4 lh-sm mt-2">20% off your first order</h3>
                         <p class="text-muted small flex-grow-1 mt-2">New guests only. Minimum €25. Valid on delivery and
@@ -141,7 +139,7 @@
 
                 <!-- Offer Card 2 -->
                 <div class="col">
-                    <div class="card h-100 border border-border rounded-4 p-4 shadow-soft hover-lift bg-white">
+                    <div class="card h-100 border border-border rounded-5 p-4 shadow-soft hover-lift bg-white">
                         <p class="eyebrow">All month</p>
                         <h3 class="font-display fs-4 lh-sm mt-2">Free focaccia with any two mains</h3>
                         <p class="text-muted small flex-grow-1 mt-2">Wood-fired, rosemary and Maldon salt. Automatically
@@ -153,7 +151,7 @@
 
                 <!-- Offer Card 3 -->
                 <div class="col">
-                    <div class="card h-100 border border-border rounded-4 p-4 shadow-soft hover-lift bg-white">
+                    <div class="card h-100 border border-border rounded-5 p-4 shadow-soft hover-lift bg-white">
                         <p class="eyebrow">Fri &amp; Sat</p>
                         <h3 class="font-display fs-4 lh-sm mt-2">€8 off after 22:00</h3>
                         <p class="text-muted small flex-grow-1 mt-2">Because the kitchen is at its best when the room
@@ -173,7 +171,7 @@
                         <h2 class="font-display fs-1 fw-semibold lh-sm">Specials on the board</h2>
                     </div>
                     <a href="/menu"
-                        class="text-decoration-none text-primary fw-semibold border-bottom border-primary pb-1 d-inline-flex align-items-center gap-2 small transition">Full
+                        class="text-decoration-none text-primary fw-semibold border-bottom  pb-1 d-inline-flex align-items-center gap-2 small transition">Full
                         menu <i class="bi bi-arrow-right small"></i></a>
                 </div>
 
@@ -181,7 +179,7 @@
 
                     <!-- Dish Card 1 -->
                     <div class="col">
-                        <div class="card h-100 border-0 shadow-sm rounded-4 hover-lift overflow-hidden zoom-media">
+                        <div class="card h-100 border-0 shadow-sm rounded-5 hover-lift overflow-hidden zoom-media">
                             <x-cards.service-card image="{{ asset('assets/images/service.jpg') }}"
                                 title="Web Development" description="Professional Laravel web development service."
                                 url="#" />
@@ -210,7 +208,7 @@
             </div>
 
             <!-- Banner CTA Section -->
-            <div class="mt-5 bg-ink rounded-4 p-4 p-md-5 text-center text-white">
+            <div class="mt-5 bg-ink rounded-5 p-4 p-md-5 text-center text-white">
                 <h2 class="font-display fs-2 fw-bold">Earn points every order</h2>
                 <p class="mx-auto mt-3 text-white-50" style="max-width: 400px;">Ten points per euro. Five hundred
                     points buys dessert for the table.</p>

@@ -111,7 +111,6 @@
          color: var(--brand-gold) !important;
      }
 
-     /* সিলেক্ট করা বাটন/ইনপুটের জন্য বর্ডার ও ব্যাকগ্রাউন্ড */
      .border-primary-custom {
          border-color: var(--brand-orange) !important;
      }

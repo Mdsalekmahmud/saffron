@@ -445,7 +445,7 @@
                         </div>
                     </div>
 
-                    <!-- কার্ড ২: Iberian Pork Presa -->
+                    <!--Iberian Pork Presa -->
                     <div class="col">
                         <div class="card border-0 shadow-sm rounded-5 h-100 hover-lift overflow-hidden zoom-media">
                             <div class="position-relative">
@@ -489,7 +489,7 @@
                         </div>
                     </div>
 
-                    <!-- কার্ড ৩: Nduja & Hot Honey -->
+                    <!--: Nduja & Hot Honey -->
                     <div class="col">
                         <div class="card border-0 shadow-sm rounded-5 h-100 hover-lift overflow-hidden zoom-media">
                             <div class="position-relative">
@@ -533,7 +533,7 @@
                         </div>
                     </div>
 
-                    <!-- কার্ড ৪: Wild Boar Pappardelle -->
+                    <!-- Wild Boar Pappardelle -->
                     <div class="col">
                         <div class="card border-0 shadow-sm rounded-5 h-100 hover-lift overflow-hidden zoom-media">
                             <div class="position-relative">
@@ -635,7 +635,7 @@
                         </div>
                     </div>
 
-                    <!-- কার্ড ২: Iberian Pork Presa -->
+                    <!-- Iberian Pork Presa -->
                     <div class="col">
                         <div class="card border-0 shadow-sm rounded-5 h-100 hover-lift overflow-hidden zoom-media">
                             <div class="position-relative">
@@ -677,7 +677,7 @@
                         </div>
                     </div>
 
-                    <!-- কার্ড ৩: Nduja & Hot Honey -->
+                    <!-- Nduja & Hot Honey -->
                     <div class="col">
                         <div class="card border-0 shadow-sm rounded-5 h-100 hover-lift overflow-hidden zoom-media">
                             <div class="position-relative">
@@ -719,7 +719,7 @@
                         </div>
                     </div>
 
-                    <!-- কার্ড ৪: Wild Boar Pappardelle -->
+                    <!-- Wild Boar Pappardelle -->
                     <div class="col">
                         <div class="card border-0 shadow-sm rounded-5 h-100 hover-lift overflow-hidden zoom-media">
                             <div class="position-relative">
@@ -772,7 +772,7 @@
                     </div>
                     <div class="row g-4">
                         <div class="col-md-4">
-                            <div class="border border-light border-opacity-10 rounded-5 p-4 h-100"><svg
+                            <div class="border border-light border-opacity-10 rounded-5 p-4 h-100" style="background-color:  #241D18"><svg
                                     class="mb-3 text-primary" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2">
                                     <path
@@ -801,7 +801,7 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="border border-light border-opacity-10 rounded-5 p-4 h-100"><svg
+                            <div class="border border-light border-opacity-10 rounded-5 p-4 h-100" style="background-color:  #241D18"><svg
                                     class="mb-3 text-primary" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2">
                                     <path
@@ -830,7 +830,7 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="border border-light border-opacity-10 rounded-5 p-4 h-100"><svg
+                            <div class="border border-light border-opacity-10 rounded-5 p-4 h-100" style="background-color:  #241D18"><svg
                                     class="mb-3 text-primary" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2">
                                     <path
