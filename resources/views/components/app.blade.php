@@ -236,12 +236,12 @@
         </div>
 
         <!-- 2. Header / Navbar (Sticky via JS) -->
-        <header id="mainNavbar" class="sticky-top z-3 bg-white" style="height: 72px;">
+        <header id="mainNavbar" class="sticky-top z-3" style="height: 72px;">
             <nav class="navbar navbar-expand-lg px-3 px-lg-0">
                 <div class="container-fluid container-lg d-flex align-items-center justify-content-between">
 
                     <!-- ============= LOGO ============= -->
-                    <a class="navbar-brand d-flex align-items-center gap-3 text-decoration-none" href="#">
+                    <a class="navbar-brand d-flex align-items-center gap-3 text-decoration-none" href="{{route('home')}}">
                         <span class="d-flex align-items-center justify-content-center rounded-circle fw-bold"
                             style="width: 44px; height: 44px; background-color: #c17015; color: #fff; font-family: 'Fraunces', serif; font-size: 1.1rem;">S</span>
                         <span class="d-none d-lg-flex flex-column lh-1">
@@ -252,7 +252,6 @@
                         </span>
                     </a>
 
-                    <!-- ============= মোবাইলের আইকন (মেনু বন্ধ থাকলে Image 2) ============= -->
                     <div class="d-flex d-lg-none align-items-center gap-2">
                         <a href="#" class="primary-button-hover d-flex align-items-center justify-content-center text-muted text-decoration-none rounded-circle"
                             style="width: 40px; height: 40px;">
@@ -272,22 +271,21 @@
                     </div>
 
                     <!-- ============= NAVBAR COLLAPSE ============= -->
-                    <div class="collapse navbar-collapse bg-white" id="navbarContent" style="">
+                    <div class="collapse navbar-collapse" id="navbarContent" style="">
 
-                        <!-- 🔥 1. ডেস্কটপের লিংক (এখানে d-none d-lg-flex ব্যবহার করা হয়েছে, তাই মোবাইলে লুকাবে) -->
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-1 d-none d-lg-flex">
-                            <li class="nav-item"><a class="nav-link active fw-semibold text-primary" href="#">Home</a></li>
-                            <li class="nav-item"><a class="nav-link text-muted" href="#">Menu</a></li>
-                            <li class="nav-item"><a class="nav-link text-muted" href="#">Reservations</a></li>
-                            <li class="nav-item"><a class="nav-link text-muted" href="#">Offers</a></li>
-                            <li class="nav-item"><a class="nav-link text-muted" href="#">About</a></li>
-                            <li class="nav-item"><a class="nav-link text-muted" href="#">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link active fw-semibold text-primary" href="{{route('home')}}">Home</a></li>
+                            <li class="nav-item"><a class="nav-link text-muted" href="{{route('menu')}}">Menu</a></li>
+                            <li class="nav-item"><a class="nav-link text-muted" href="{{route('reservations')}}">Reservations</a></li>
+                            <li class="nav-item"><a class="nav-link text-muted" href="{{route('offers')}}">Offers</a></li>
+                            <li class="nav-item"><a class="nav-link text-muted" href="{{route('about')}}">About</a></li>
+                            <li class="nav-item"><a class="nav-link text-muted" href="{{route('contact')}}">Contact</a></li>
                         </ul>
 
                         <!-- ডেস্কটপের ডান আইকন (দামসহ ব্যাগ) -->
                         <div class="d-none d-lg-flex align-items-center gap-2 ms-lg-4">
-                            <a href="#" class="primary-button-hover d-flex align-items-center justify-content-center text-muted rounded-circle text-decoration-none" style="width: 44px; height: 44px;"><i class="bi bi-search fs-5"></i></a>
-                            <a href="#" class="primary-button-hover d-flex align-items-center justify-content-center text-muted rounded-circle text-decoration-none" style="width: 44px; height: 44px;"><i class="bi bi-person fs-5"></i></a>
+                            <a href="{{route('menu')}}" class="primary-button-hover d-flex align-items-center justify-content-center text-muted rounded-circle text-decoration-none" style="width: 44px; height: 44px;"><i class="bi bi-search fs-5"></i></a>
+                            <a href="{{route('account')}}" class="primary-button-hover d-flex align-items-center justify-content-center text-muted rounded-circle text-decoration-none" style="width: 44px; height: 44px;"><i class="bi bi-person fs-5"></i></a>
                             <a href="#" class="primary-button-hover d-flex align-items-center gap-2 bg-opacity-10 text-dark rounded-pill px-3 py-2 text-decoration-none fw-medium" style="background-color: #f6efe3;"><i class="bi bi-bag fs-5"></i> <span class="small tabular-nums">€0.00</span></a>
                         </div>
 
